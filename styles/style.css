@@ -1,1 +1,298 @@
-/* место для вашего кода */
+.header{      /*голова*/
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header__menu{    /*навигация*/
+}
+.header__links-list {     /*ul*/
+  display: flex;
+  gap: 32px;
+}
+.header__links-list-item{ /*li*/
+  list-style: circle;
+}
+.header__link{ /*a - общий класс */
+  color: inherit; 
+  color: #000; 
+}
+.header__links-list-item_no-bullit{ /*дополнительный класс только для особого пункта, у которого нужно убрать кружочек*/
+  list-style: none;
+}
+.header__link_active{ /* особый класс для главной */
+  text-decoration: none;
+}
+.header__logo{ /*логотип для а */
+  display: block;
+  width: 148px;
+  justify-self: center;
+}
+.header__logo-image{ /*класс для img */
+  display: block;
+  width: 100%;
+}
+.address{ /*общий класс для адреса*/
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: inherit;
+  color: #000;
+}
+.header__address { /* выравнивание адреса именно в шапке */
+  justify-self: end;
+  max-width: 240px;
+  color: inherit;
+}
+.cover{ /*оно тебе надо */
+  position: relative;    /* поверх фона будет лежать overlay */
+  min-height:757px;
+  padding: 165px 50px 50px;
+  background-image: url("../images/lotus-flower.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlay{ /*прозрачный слой */
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.6);
+}
+.cover__title,
+.cover__description{ /* правила блока оно тебе надо*/
+  position: relative;
+  z-index: 1;
+}
+.cover__title {
+  color: #fff;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 118px;
+}
+.aligned-text{ /*ОНО*/
+  display: block;
+}
+.aligned-text_left{ /*ОНО*/
+  text-align: left;
+}
+.aligned-text_center{ /*ТЕБЕ*/
+  text-align: center;
+}
+.aligned-text_right{  /*НАДО*/
+  text-align: right;
+}
+.letter-spacing-extended {
+}
+.no-letter-spacing {
+}
+.cover__description-text{/*Аукцион вещей, в которые никто не верил - правила */
+  color: #fff; 
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+.bet-button{ /*кнопка*/
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.lots{  /*секции */
+  margin-top: 180px;
+  padding: 0 24px;
+
+}
+.lots__heading{ /*h2*/
+  margin: 0 0 27px 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.lots__card-list{/*список карточек*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lots__card-list-item{ /*li*/
+  width: 334px;
+  min-height: 596px;
+}
+.card{ /*общий стиль */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;  
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-link{  /*ссылка, обрамляющая карточку*/
+  display: block;
+  height: 100%;
+  text-decoration: none;  
+}
+.card__title {
+  margin: 0;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.card__text {
+  margin: 0;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.6);
+}
+.card__title,
+.card__text{ /*текст карточки*/
+  position: relative;
+  z-index: 1;
+}
+.card_type_film{ /*Фильм режиссёра, который бросил киношколу*/
+  background-image: url("../images/photo.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card_type_book{ /*Книга, где описан один скучный день из жизни рекламного агента*/
+  background-image: url("../images/photo (1).svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card_type_picture{ /*Картина, которую повторит даже 5-летний сын маминой подруги*/
+  background-image: url("../images/photo (2).svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lots__look-more-link{ /*ссылка «Посмотреть больше».*/
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  color: #000000;
+}
+.about{ /*вся секция*/
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  margin-top: 155px;
+}
+.about__column{ /*класс для колонок*/
+}
+.about__logo{ /*контейнер с логотипом*/
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  justify-self: center; 
+}
+.about__logo-image{ /*изображение логотипа*/
+  width: 160px;
+}
+.about__title{ /*заголовок секции*/
+  margin: 100px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.about__text{ /*блок для текстов (параграфов) секции*/
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+.footer{ /*подвал*/
+  margin-top: 180px;
+  padding: 0 50px 82px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: start;
+}
+.footer__menu{ /* блок навигации по списку ссылок*/
+  justify-self: center;
+}
+.footer__menu-list{ /*список пунктов меню*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer__menu-list-item{ /*cпункт списка меню*/
+  margin: 0;
+}
+.footer__menu-link{ /*каждая ссылка в пункте списка*/
+ color: #000;
+ white-space: nowrap;
+}
+.footer__menu-link_active{  /* выбранная ссылка меню (без подчёркивания)*/
+  text-decoration: none;
+}
+.footer__social-list{  /*список ссылок на социальные сети */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-self: end;
+}
+.footer__social-list-item{ /*пункт списка ссылок на социальные сети*/
+  margin: 0;
+}
+.footer__social-link{  /*ссылка на социальные сети*/
+ display: block;
+}
+.footer__social-icon{ /* иконка социальной сети*/
+  display: block;
+  width: 48px;
+  height: 48px;
+}

@@ -1,38 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Сброс всех стандартных отступов и границ */
 }
-
+/*a {
+    text-decoration: none; Ссылки без подчеркивания по умолчанию
+}*/
+img {
+    max-width: 100%;
+    display: block; /* Картинки - чтобы не выходили за пределы */
+}
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-}
-
-img {
-  width: 100%;
-}
-
-button {
-  font: inherit;
+  background-color: #fff;
 }
