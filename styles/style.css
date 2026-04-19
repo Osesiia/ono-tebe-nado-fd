@@ -147,12 +147,12 @@
   text-transform: uppercase;
   background-color: transparent;
 }
-.lots{  /*секции */
+.lots {  /*секции */
   margin-top: 180px;
   padding: 0 24px;
 
 }
-.lots__heading{ /*h2*/
+.lots__heading { /*h2*/
   margin: 0 0 35px 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -160,7 +160,7 @@
   line-height: 1;
   text-transform: uppercase;
 }
-.lots__card-list{
+.lots__card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -168,11 +168,11 @@
   padding: 0;
   list-style: none;/*список карточек*/
 }
-.lots__card-list-item{ /*li*/
+.lots__card-list-item { /*li*/
   width: 334px;
   min-height: 596px;
 }
-.card{ /*общий стиль */
+.card { /*общий стиль */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -183,7 +183,7 @@
   background-position: center;
   background-size: cover;
 }
-.card-link{  /*ссылка, обрамляющая карточку*/
+.card-link {  /*ссылка, обрамляющая карточку*/
   display: block;
   height: 100%;
   text-decoration: none;
@@ -212,23 +212,23 @@
   background-color: rgb(0 0 0 / 0.6);
 }
 .card__title,
-.card__text{ /*текст карточки*/
+.card__text { /*текст карточки*/
   position: relative;
   z-index: 1;
 }
-.card_type_film{ /*Фильм режиссёра, который бросил киношколу*/
+.card_type_film { /*Фильм режиссёра, который бросил киношколу*/
   background-image: url("../images/photo.svg");
 
 }
-.card_type_book{ /*Книга, где описан один скучный день из жизни рекламного агента*/
+.card_type_book { /*Книга, где описан один скучный день из жизни рекламного агента*/
   background-image: url("../images/photo (1).svg");
 
 }
-.card_type_picture{ /*Картина, которую повторит даже 5-летний сын маминой подруги*/
+.card_type_picture { /*Картина, которую повторит даже 5-летний сын маминой подруги*/
   background-image: url("../images/photo (2).svg");
 
 }
-.lots__look-more-link{ /*ссылка «Посмотреть больше».*/
+.lots__look-more-link { /*ссылка «Посмотреть больше».*/
   display: inline-block;
   margin: 33px 0 0 41px;
   border-bottom: 1px solid #000;
