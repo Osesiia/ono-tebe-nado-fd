@@ -217,15 +217,15 @@
   z-index: 1;
 }
 .card_type_film { /*Фильм режиссёра, который бросил киношколу*/
-  background-image: url("../images/photo.svg");
+  background-image: url("../images/photo.jpg");
 
 }
 .card_type_book { /*Книга, где описан один скучный день из жизни рекламного агента*/
-  background-image: url("../images/photo (1).svg");
+  background-image: url("../images/photo (1).jpg");
 
 }
 .card_type_picture { /*Картина, которую повторит даже 5-летний сын маминой подруги*/
-  background-image: url("../images/photo (2).svg");
+  background-image: url("../images/photo (2).jpg");
 
 }
 .lots__look-more-link { /*ссылка «Посмотреть больше».*/
