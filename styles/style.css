@@ -4,6 +4,7 @@
   align-items: center;
   padding: 92px 50px 96px;
 }
+
 .header__links-list {
   display: flex;
   align-items: center;
@@ -11,11 +12,13 @@
   margin: 0;
   padding: 0;
 }
+
 .header__links-list-item {
   font-size: 18px;
   line-height: 18px;
   list-style: circle;
 }
+
 .header__link {
   color: #000;
   font-size: 18px;
@@ -62,13 +65,12 @@
 
 .header__address {
   justify-self: end;
-  align-items: stretch;
-  width: 239px;
-
+  width: 230px;
 }
+
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
@@ -92,8 +94,8 @@
   line-height: 115px;
   letter-spacing: 30px;
   text-transform: uppercase;
-
 }
+
 .letter-spacing-extended {
   letter-spacing: 0.3em;
 }
@@ -101,6 +103,7 @@
 .no-letter-spacing {
   letter-spacing: 0;
 }
+
 .aligned-text {
   display: block;
 }
@@ -147,12 +150,13 @@
   text-transform: uppercase;
   background-color: transparent;
 }
-.lots {  /*секции */
+
+.lots {
   margin-top: 180px;
   padding: 0 24px;
-
 }
-.lots__heading { /*h2*/
+
+.lots__heading {
   margin: 0 0 35px 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -160,19 +164,22 @@
   line-height: 1;
   text-transform: uppercase;
 }
+
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   margin: 8px 0 0;
   padding: 0;
-  list-style: none;/*список карточек*/
+  list-style: none;
 }
-.lots__card-list-item { /*li*/
+
+.lots__card-list-item {
   width: 334px;
   min-height: 596px;
 }
-.card { /*общий стиль */
+
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -183,11 +190,13 @@
   background-position: center;
   background-size: cover;
 }
-.card-link {  /*ссылка, обрамляющая карточку*/
+
+.card-link {
   display: block;
   height: 100%;
   text-decoration: none;
 }
+
 .card__title {
   margin: 1px 0 0;
   color: #fff;
@@ -198,6 +207,7 @@
   text-decoration: underline;
   text-transform: uppercase;
 }
+
 .card__text {
   margin: 0;
   color: #fff;
@@ -206,29 +216,26 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.card .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgb(0 0 0 / 0.6);
-}
+
 .card__title,
-.card__text { /*текст карточки*/
+.card__text {
   position: relative;
   z-index: 1;
 }
-.card_type_film { /*Фильм режиссёра, который бросил киношколу*/
+
+.card_type_film {
   background-image: url("../images/photo.jpg");
-
 }
-.card_type_book { /*Книга, где описан один скучный день из жизни рекламного агента*/
+
+.card_type_book {
   background-image: url("../images/photo (1).jpg");
-
 }
-.card_type_picture { /*Картина, которую повторит даже 5-летний сын маминой подруги*/
+
+.card_type_picture {
   background-image: url("../images/photo (2).jpg");
-
 }
-.lots__look-more-link { /*ссылка «Посмотреть больше».*/
+
+.lots__look-more-link {
   display: inline-block;
   margin: 33px 0 0 41px;
   border-bottom: 1px solid #000;
@@ -238,6 +245,7 @@
   line-height: 1;
   text-decoration: none;
 }
+
 .about {
   display: grid;
   grid-template-columns: 334px 693px;
@@ -291,6 +299,7 @@
   width: 100%;
   margin: 0;
 }
+
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
